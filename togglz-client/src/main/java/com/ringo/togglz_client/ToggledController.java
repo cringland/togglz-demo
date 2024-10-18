@@ -13,7 +13,7 @@ public class ToggledController {
         if (FooFeatures.FEATURE_ONE.isActive()) {
             return "Hello World";
         } else {
-            return "GoodbyWorld";
+            return "Goodbye World";
         }
     }
 }
