@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: togglz-server
+server:
+  port: '8082'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+togglz:
+  endpoint:
+    enabled: 'true'
+    id: togglz
+  console:
+    secured: 'false'
+    enabled: 'true'
+    path: /togglz-console
+
+# Features can also be configured in config properties, across multiple property files
+#  features:
+#    DATE_SAMPLE:
+#      enabled: true
+#      strategy: 'release-date'
+#      param:
+#        date: '2024-10-16'
+#        time: '17:11:01'
+#    FOO:
+#      enabled: 'true'
+#    BAR:
+#      enabled: 'false'
